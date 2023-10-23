@@ -1,13 +1,13 @@
-const nav = document.querySelector('.nav-main');
+const nav = document.querySelector('.nav');
 const navBtn = document.querySelector('.burger-btn');
-const allNavItems = document.querySelectorAll('.nav-main__item')
+const allNavItems = document.querySelectorAll('.nav__item')
 
 const handleNav = () => {
-    nav.classList.toggle('nav-main--active')
+    nav.classList.toggle('nav--active')
 
     allNavItems.forEach(item => {
         item.addEventListener('click', () => {
-            nav.classList.remove('.nav-main--active')
+            nav.classList.remove('nav--active')
         })
     })
 
@@ -23,7 +23,5 @@ const handleNavItemsAnimaton = () => {
         delayTime++;
     })
 }
-
-
 
 navBtn.addEventListener('click', handleNav)
