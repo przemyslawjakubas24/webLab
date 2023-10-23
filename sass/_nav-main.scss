@@ -1,0 +1,93 @@
+@use './variables' as variables;
+@use './class-default' as class-default;
+
+.burger-btn {
+	// position: fixed;
+	// top: ;
+	// right: 20px;
+	padding: 1em 0 1em 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1000;
+    transition: padding-right .3s;
+
+	&:focus {
+        padding-right: 1em;
+		outline: none;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 8px;
+	}
+
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
+
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+
+	&__bars,
+	&__bars::after,
+	&__bars::before {
+		position: absolute;
+		right: 0;
+		height: 3px;
+		content: '';
+		background-color: variables.$light-color;
+		transition: width .3s;
+	}
+
+	&__bars {
+		width: 100%;
+
+		&::after {
+			top: 13px;
+			width: 60%;
+		}
+
+		&::before {
+			top: 27px;
+			width: 30%;
+			transition-delay: .1s;
+		}
+	}
+}
+
+.nav-main {
+	// position: fixed;
+	width: 100%;
+	padding: 1em 0;
+	background-color: variables.$primary-color;
+	&__list {
+		display: none;
+	}
+	.container {
+		display: flex;
+        justify-content: space-between;
+	}
+    &--active {
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(200%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
+}
+

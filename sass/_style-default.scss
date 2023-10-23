@@ -1,0 +1,36 @@
+@use './variables' as variables;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Gluten', cursive;
+} 
+
+a {
+    text-decoration: none;
+	color: variables.$primary-color;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background: none;
+	border: 0;
+	cursor: pointer;
+}

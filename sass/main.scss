@@ -1,11 +1,8 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@use './variables' as variables;
+@use './style-default';
+@use './class-default';
+@use './nav-main';
 
-h1 {
-    text-align: center;
-    color: green;
-    margin-top: 100px;
-}
+
+
+
