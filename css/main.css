@@ -16,7 +16,7 @@ body {
   background-color: silver;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Gluten", cursive;
 }
 
@@ -39,21 +39,67 @@ button {
   display: block;
   z-index: 30;
   width: 50px;
-  background: gray;
 }
 .logo img {
   display: block;
   width: 100%;
 }
 
-.bars {
-  display: block;
-  z-index: 31;
+.burger {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
-.bars img {
+.burger:focus > .burger__container {
+  box-shadow: 0 0 2px 2px #00ffff;
+}
+.burger:focus, .burger__container:focus {
+  outline: none;
+}
+.burger__container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 35px;
+  height: 30px;
+}
+.burger__bars {
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #eee;
+  transition: transform 220ms ease-in-out;
+}
+.burger__bars::before, .burger__bars::after {
   display: block;
-  width: 50px;
-  background: gray;
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  background-color: #eee;
+  content: "";
+}
+.burger__bars::before {
+  top: -12px;
+  transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+.burger__bars::after {
+  bottom: -12px;
+  transition: bottom 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+.burger--active .burger__bars {
+  transform: rotate(225deg);
+  transition: transform 220ms 120ms ease-in-out;
+}
+.burger--active .burger__bars::before {
+  top: 0;
+  transition: top 100ms ease-out;
+}
+.burger--active .burger__bars::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
 }
 
 .container {
@@ -67,11 +113,11 @@ button {
   background-color: #444;
 }
 .nav-main .container {
+  padding: 2em;
   display: flex;
   justify-content: space-between;
-  padding: 2em;
-  border: 1px solid rgb(7, 105, 204);
   align-items: center;
+  border: 1px solid rgb(7, 105, 204);
 }
 .nav-main__list {
   background-color: #888;
@@ -85,7 +131,7 @@ button {
   width: 100%;
   height: 100vh;
   transform: translateX(100%);
-  transition: 0.6s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .nav-main__list li {
   margin-bottom: 2em;

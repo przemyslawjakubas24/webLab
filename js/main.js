@@ -1,8 +1,7 @@
-const nav = document.querySelector('.nav-main__list');
-const navBtn = document.querySelector('.bars');
+const burgerBtn = document.querySelector('.burger')
+const navList = document.querySelector('.nav-main__list')
 
-const showNav = () => {
-    nav.classList.toggle('nav-main__list--active')
-}
-
-navBtn.addEventListener('click', showNav) 
+burgerBtn.addEventListener('click', () => {
+	burgerBtn.classList.toggle('burger--active')
+	navList.classList.toggle('nav-main__list--active')
+})
