@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   text-decoration: none;
   color: #444;
+  cursor: pointer;
 }
 
 li {
@@ -39,6 +40,7 @@ button {
   display: block;
   z-index: 30;
   width: 50px;
+  transition: 0.5s linear;
 }
 .logo img {
   display: block;
@@ -102,6 +104,11 @@ button {
   transition: bottom 100ms ease-out, transform 220ms 120ms ease-in-out;
 }
 
+@media (min-width: 992px) {
+  .burger {
+    display: none;
+  }
+}
 .container {
   margin: 0 auto;
   padding: 0 2em;
@@ -110,6 +117,8 @@ button {
 }
 
 .nav-main {
+  position: fixed;
+  width: 100%;
   background-color: #444;
 }
 .nav-main .container {
@@ -117,10 +126,8 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgb(7, 105, 204);
 }
 .nav-main__list {
-  background-color: #888;
   position: fixed;
   top: 0;
   left: 0;
@@ -132,21 +139,90 @@ button {
   height: 100vh;
   transform: translateX(100%);
   transition: 0.5s ease-in-out;
+  background-color: #45867f;
 }
 .nav-main__list li {
   margin-bottom: 2em;
 }
 .nav-main__list li:last-child {
   margin-bottom: 0;
+  background-color: #222;
 }
 .nav-main__list--active {
   transform: translateX(0);
 }
 .nav-main__item {
-  border: 1px solid rgba(20, 20, 20, 0.3333333333);
+  position: relative;
   display: inline-block;
   padding: 0.5em 1em;
   color: #eee;
   font-size: 2rem;
   text-transform: uppercase;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+.nav-main__item::before, .nav-main__item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+.nav-main__item::before {
+  top: -2px;
+  left: -4px;
+  border-top: 0;
+  border-left: 0;
+}
+.nav-main__item::after {
+  bottom: -2px;
+  right: -4px;
+  border-bottom: 0;
+  border-right: 0;
+}
+.nav-main__item:hover::before, .nav-main__item:hover::after {
+  width: 50px;
+  height: 50%;
+}
+.nav-main__item:hover::before {
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+}
+.nav-main__item:hover::after {
+  border-bottom: 2px solid #eee;
+  border-right: 2px solid #eee;
+}
+
+@media (min-width: 992px) {
+  .nav-main {
+    background-color: #444;
+  }
+  .nav-main .container {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-main .nav-main__container {
+    transition: padding 0.5s linear;
+  }
+  .nav-main__list {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    height: 100%;
+    transform: translateX(0);
+    background-color: transparent;
+  }
+  .nav-main__list li {
+    margin-bottom: 0;
+  }
+  .nav-main__item {
+    font-size: 1.6rem;
+    transition: font-size 0.5s linear;
+  }
+}
+main {
+  height: 1800px;
+  background: rgb(90, 112, 137);
 }/*# sourceMappingURL=main.css.map */
