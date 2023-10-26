@@ -4,6 +4,7 @@
 	position: fixed;
 	width: 100%;
 	background-color: $primary-color;
+	z-index: 200;
 	.container {
 		padding: 2em;
 		display: flex;
