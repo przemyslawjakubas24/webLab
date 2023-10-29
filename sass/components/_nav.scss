@@ -1,6 +1,6 @@
-@import './variables';
+// Navigation style
 
-.nav-main {
+.nav {
 	position: fixed;
 	width: 100%;
 	background-color: $primary-color;
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: 992px) {
-	.nav-main {
+	.nav {
 		background-color: $primary-color;
 		.container {
 			padding: 2em;
@@ -88,7 +88,7 @@
 			justify-content: space-between;
 			align-items: center;
 		}
-		.nav-main__container {
+		.nav__container {
 			transition: padding .5s linear;
 		}
 		&__list {

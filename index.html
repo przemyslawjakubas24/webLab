@@ -15,15 +15,15 @@
 
 <body>
 
-    <nav class="nav-main">
+    <nav class="nav">
         <div class="container nav-main__container">
             <a href="" class="logo"><img src="./img/page/logo.svg" alt="Logo"></a>
-            <ul class="nav-main__list">
-                <li><a href="" class="nav-main__item">start</a></li>
-                <li><a href="" class="nav-main__item">oferta</a></li>
-                <li><a href="" class="nav-main__item">realizacje</a></li>
-                <li><a href="" class="nav-main__item">cennik</a></li>
-                <li><a href="" class="nav-main__item">kontakt</a></li>
+            <ul class="nav__list">
+                <li><a href="" class="nav__item">start</a></li>
+                <li><a href="" class="nav__item">oferta</a></li>
+                <li><a href="" class="nav__item">realizacje</a></li>
+                <li><a href="" class="nav__item">cennik</a></li>
+                <li><a href="" class="nav__item">kontakt</a></li>
             </ul>
 
             <button class="burger" aria-label="Menu">
@@ -33,18 +33,21 @@
             </button>
         </div>
     </nav>
-    <header class="header-main">
+    <header class="header">
         <div class="container">
-            <h1>Strona testowa</h1>
+            <h1 class="header__heading">Strona testowa</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus ex vel commodi quisquam, sit,
                 voluptatum voluptas error dolores laboriosam reprehenderit corporis voluptatem obcaecati quaerat
                 necessitatibus, eligendi autem magni.</p>
+                <a href="#" class="btn">Dowiedz się więcej</a>
+                <a href="#" class="btn">Zamów wycenę</a>
+                <div class="overlay"></div>
         </div>
     </header>
     <main>
         <section class="offer">
             <div class="container">
-                <h2>Oferta</h2>
+                <h2 class="section__heading">Oferta</h2>
                 <ul>
                     <li>Tworzenie responsywnych stron internetowych</li>
                     <li>Optymalizacja wydajności stron internetowych</li>
@@ -55,39 +58,55 @@
                 </ul>
             </div>
         </section>
-        <section class="realizations">
+        <section class="section realizations">
             <div class="container">
-                <h2>Realizacje</h2>
+                <h2 class="section__heading">Realizacje</h2>
                 <div class="realizations__item">
                     <h3>Tworzenie responsywnej strony internetowej dla małej firmy kosmetycznej</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
                 <div class="realizations__item">
                     <h3>Optymalizacja wydajności strony internetowej sklepu online zwiększająca prędkość ładowania</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
                 <div class="realizations__item">
                     <h3>Projektowanie nowego interfejsu użytkownika (UI) dla aplikacji społecznościowej</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
                 <div class="realizations__item">
                     <h3>Programowanie aplikacji internetowej do zarządzania projektami dla firmy technologicznej</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
                 <div class="realizations__item">
                     <h3>Rozwijanie i konserwacja istniejącej strony internetowej bloga podróżniczego</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
 
                 <div class="realizations__item">
                     <h3>Integracja zewnętrznego API płatności w aplikacji e-commerce</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
                 <div class="realizations__item">
                     <h3>Tworzenie strony portfolio dla artysty wizualnego</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
                 <div class="realizations__item">
                     <h3>Projektowanie interaktywnego narzędzia do analizy danych dla badacza naukowego</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    <img src="./img/matrix-1735640_640.jpg" alt="test">
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section class="section price">
             <div class="container">
-                <h2>Cennik</h2>
+                <h2 class="section__heading">Cennik</h2>
                 <ul>
                     <li>Tworzenie responsywnej strony internetowej dla małej firmy kosmetycznej - $1000</li>
                     <li>Optymalizacja wydajności strony internetowej sklepu online zwiększająca prędkość ładowania -
@@ -104,17 +123,17 @@
             </div>
         </section>
     </main>
-    <footer class="footer-main">
+    <footer class="footer">
         <div class="container">
-            <section>
-                <h3>Kontakt</h3>
+            <section class="section contact">
+                <h2 class="section__heading">Kontakt</h2>
                 <p>Jeśli masz pytania lub chciałbyś się skontaktować, możesz to zrobić za pośrednictwem poniższych
                     danych
                     kontaktowych:</p>
-                <p>Adres email: <a href="mailto:kontakt@przykladowa-strona.pl">kontakt@przykladowa-strona.pl</a></p>
+                <p>Adres email:<br/><a href="mailto:kontakt@przykladowa-strona.pl">kontakt@przykladowa-strona.pl</a></p>
                 <p>Numer telefonu: +48 123 456 789</p>
             </section>
-            <p>webLab &copy; 2023</p>
+            <p class="footer__copy">webLab &copy; 2023</p>
         </div>
     </footer>
 

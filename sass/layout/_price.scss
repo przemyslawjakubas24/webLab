@@ -1,0 +1,10 @@
+//  Price styles
+
+.price {
+	background-color: $primary-color;
+	li {
+		list-style: inside;
+		margin-bottom: 2em;
+		line-height: 1.5;
+	}
+}

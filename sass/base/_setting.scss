@@ -1,0 +1,21 @@
+// Setting styles
+
+.container {
+    margin: 0 auto;
+    padding: 0 2em;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.header,
+.offer,
+.realizations,
+.price {
+	padding: 6em 0;
+}
+
+.section {
+    &__heading {
+        margin-bottom: 1em;
+    }
+}

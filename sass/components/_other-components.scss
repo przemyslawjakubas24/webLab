@@ -1,0 +1,23 @@
+// Other components styles
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background-color: $overlay-color;
+}
+
+.logo {
+	display: block;
+	z-index: 30;
+	width: 50px;
+	transition: .5s linear;
+	img {
+		display: block;
+		width: 100%;
+	}
+}

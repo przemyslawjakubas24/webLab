@@ -1,0 +1,16 @@
+// Buttons styles
+
+.btn {
+	position: relative;
+    z-index: 149;
+	display: block;
+	margin-bottom: 1em;
+	padding: 1em;
+	text-align: center;
+	background-color: $primary-color;
+	color: $light-color;
+	border-radius: 4px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

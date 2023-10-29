@@ -1,35 +1,5 @@
-@import './variables';
-@import './styles-dafault';
-@import './class-default';
-@import './components';
-@import './layout';
-@import './nav';
+@import './partials/partials';
+@import './base/base';
+@import './layout/layout';
+@import './components/components';
 
-.header-main {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $secondary-color;
-}
-
-.offer {
-    background-color: $primary-color;
-}
-
-.realizations {
-    background-color: $secondary-color;
-}
-
-.price {
-    background-color: $primary-color;
-}
-
-.contact {
-    background-color: $secondary-color;
-
-}
-
-
-// background: rgb(90, 112, 137);
-// background-color: #45867f;

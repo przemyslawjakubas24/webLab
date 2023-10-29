@@ -1,0 +1,24 @@
+// Header style
+
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: $secondary-color url(../img/page/particles-7104407_640.jpg) center;
+	background-size: cover;
+	color: $light-color;
+	.container {
+		p {
+			position: relative;
+			z-index: 150;
+			margin-bottom: 2em;
+			line-height: 1.5;
+		}
+	}
+    .header__heading {
+        margin: 4em 0 1em;
+        position: relative;
+        z-index: 151;
+    }
+}

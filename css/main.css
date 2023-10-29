@@ -53,6 +53,97 @@ button {
   cursor: pointer;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 2em;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header,
+.offer,
+.realizations,
+.price {
+  padding: 6em 0;
+}
+
+.section__heading {
+  margin-bottom: 1em;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #888 url(../img/page/particles-7104407_640.jpg) center;
+  background-size: cover;
+  color: #eee;
+}
+.header .container p {
+  position: relative;
+  z-index: 150;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+.header .header__heading {
+  margin: 4em 0 1em;
+  position: relative;
+  z-index: 151;
+}
+
+.offer {
+  background-color: #444;
+}
+.offer ul li {
+  list-style: inside;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+
+.realizations {
+  background-color: #888;
+}
+.realizations__item {
+  background-color: #eee;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+.realizations__item h3 {
+  margin-bottom: 1em;
+  line-height: 1.2;
+}
+.realizations__item p {
+  margin-bottom: 1em;
+}
+.realizations__item img {
+  width: 100%;
+}
+
+.price {
+  background-color: #444;
+}
+.price li {
+  list-style: inside;
+  margin-bottom: 2em;
+  line-height: 1.5;
+}
+
+.contact {
+  padding: 6em 0 2em;
+  line-height: 1.5;
+}
+.contact p {
+  margin-bottom: 1em;
+}
+
+.footer {
+  background-color: #888;
+}
+.footer__copy {
+  padding: 2rem 0;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -75,6 +166,113 @@ button {
   width: 100%;
 }
 
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: #444;
+  z-index: 200;
+}
+.nav .container {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  transition: 0.5s ease-in-out;
+  background-color: #45867f;
+}
+.nav__list li {
+  margin-bottom: 2em;
+}
+.nav__list li:last-child {
+  margin-bottom: 0;
+  background-color: #222;
+}
+.nav__list--active {
+  transform: translateX(0);
+}
+.nav__item {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #eee;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+.nav__item::before, .nav__item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  transition: width 0.5s ease, height 0.5s ease;
+}
+.nav__item::before {
+  top: -2px;
+  left: -4px;
+  border-top: 0;
+  border-left: 0;
+}
+.nav__item::after {
+  bottom: -2px;
+  right: -4px;
+  border-bottom: 0;
+  border-right: 0;
+}
+.nav__item:hover::before, .nav__item:hover::after {
+  width: 50px;
+  height: 50%;
+}
+.nav__item:hover::before {
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+}
+.nav__item:hover::after {
+  border-bottom: 2px solid #eee;
+  border-right: 2px solid #eee;
+}
+
+@media (min-width: 992px) {
+  .nav {
+    background-color: #444;
+  }
+  .nav .container {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav .nav__container {
+    transition: padding 0.5s linear;
+  }
+  .nav__list {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    height: 100%;
+    transform: translateX(0);
+    background-color: transparent;
+  }
+  .nav__list li {
+    margin-bottom: 0;
+  }
+  .nav__item {
+    font-size: 1.6rem;
+    transition: font-size 0.5s linear;
+  }
+}
 .burger {
   margin: 0;
   padding: 0;
@@ -137,140 +335,17 @@ button {
     display: none;
   }
 }
-.container {
-  margin: 0 auto;
-  padding: 0 2em;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.nav-main {
-  position: fixed;
-  width: 100%;
-  background-color: #444;
-  z-index: 200;
-}
-.nav-main .container {
-  padding: 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav-main__list {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  transform: translateX(100%);
-  transition: 0.5s ease-in-out;
-  background-color: #45867f;
-}
-.nav-main__list li {
-  margin-bottom: 2em;
-}
-.nav-main__list li:last-child {
-  margin-bottom: 0;
-  background-color: #222;
-}
-.nav-main__list--active {
-  transform: translateX(0);
-}
-.nav-main__item {
+.btn {
   position: relative;
-  display: inline-block;
-  padding: 0.5em 1em;
+  z-index: 149;
+  display: block;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-align: center;
+  background-color: #444;
   color: #eee;
-  font-size: 2rem;
-  text-transform: uppercase;
-  transition: width 0.5s ease, height 0.5s ease;
+  border-radius: 4px;
 }
-.nav-main__item::before, .nav-main__item::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  transition: width 0.5s ease, height 0.5s ease;
-}
-.nav-main__item::before {
-  top: -2px;
-  left: -4px;
-  border-top: 0;
-  border-left: 0;
-}
-.nav-main__item::after {
-  bottom: -2px;
-  right: -4px;
-  border-bottom: 0;
-  border-right: 0;
-}
-.nav-main__item:hover::before, .nav-main__item:hover::after {
-  width: 50px;
-  height: 50%;
-}
-.nav-main__item:hover::before {
-  border-top: 2px solid #eee;
-  border-left: 2px solid #eee;
-}
-.nav-main__item:hover::after {
-  border-bottom: 2px solid #eee;
-  border-right: 2px solid #eee;
-}
-
-@media (min-width: 992px) {
-  .nav-main {
-    background-color: #444;
-  }
-  .nav-main .container {
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-main .nav-main__container {
-    transition: padding 0.5s linear;
-  }
-  .nav-main__list {
-    position: relative;
-    display: flex;
-    justify-content: end;
-    flex-direction: row;
-    height: 100%;
-    transform: translateX(0);
-    background-color: transparent;
-  }
-  .nav-main__list li {
-    margin-bottom: 0;
-  }
-  .nav-main__item {
-    font-size: 1.6rem;
-    transition: font-size 0.5s linear;
-  }
-}
-.header-main {
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #888;
-}
-
-.offer {
-  background-color: #444;
-}
-
-.realizations {
-  background-color: #888;
-}
-
-.price {
-  background-color: #444;
-}
-
-.contact {
-  background-color: #888;
+.btn:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
