@@ -34,6 +34,7 @@
 		height: 3px;
 		background-color: $light-color;
 		transition: transform 220ms ease-in-out;
+		border-radius: 2px;
 
 		&::before,
 		&::after {
@@ -41,8 +42,9 @@
 			position: absolute;
 			width: 35px;
 			height: 3px;
-			background-color: $light-color;
 			content: '';
+			background-color: $light-color;
+			border-radius: 2px;
 		}
 
 		&::before {

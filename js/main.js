@@ -17,7 +17,7 @@ function handleScroll() {
 			element.style.fontSize = '1.4rem'
 		})
 	} else {
-		sizeNav.style.padding = '2em'
+		sizeNav.style.padding = '1.5em'
 		sizeNavLogo.style.width = '50px'
 		sizeNavFont.forEach(element => {
 			element.style.fontSize = '1.6rem'
