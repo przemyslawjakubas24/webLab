@@ -12,7 +12,8 @@
 		align-items: center;
 	}
 	.nav__container {
-		transition: padding .2s ease-in-out;
+		transition-property: padding;
+		@include default-animation;
 	}
 	&__list {
 		position: fixed;
@@ -25,14 +26,15 @@
 		width: 100%;
 		height: 100vh;
 		transform: translateX(100%);
-		transition: transform .2s ease-in-out;
+		transition-property: transform;
+		@include default-animation;
 		background-color: $primary-color;
 		li {
 			margin: 0 1em 2em 0;
 			&:last-child {
 				margin: 0;
 				background-color: $dark-color;
-				// border-radius: $default-rounding;
+				border-radius: $default-rounding;
 			}
 		}
 		&--active {
@@ -46,7 +48,8 @@
 		color: $light-color;
 		font-size: 2rem;
 		text-transform: uppercase;
-		transition: width .2s ease-in-out, height .2s ease-in-out;
+		transition-property: font-size, width, height;
+		@include default-animation;
 	}
 	&__item::before,
 	&__item::after {
@@ -54,7 +57,8 @@
 		position: absolute;
 		width: 0;
 		height: 0;
-		transition: width .2s ease-in-out, height .2s ease-in-out;
+		transition-property: font-size, width, height;
+		@include default-animation;
 	}
 	&__item::before {
 		top: -2px;
@@ -106,7 +110,6 @@
 		}
 		&__item {
 			font-size: 1.6rem;
-			transition: font-size .2s ease-in-out;
 		}
 	}
 }

@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&family=Raleway:wght@100;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Raleway:wght@100;400;700&display=swap"
         rel="stylesheet">
     <title>WebLab4</title>
     <link rel="stylesheet" href="./css/main.css">
@@ -17,13 +17,13 @@
 
     <nav class="nav">
         <div class="container nav__container">
-            <a href="" class="logo"><img src="./img/page/logo.svg" alt="Logo"></a>
+            <a href="" class="logo"><img src="./img/page/logo.svg" alt="Logo">webLab</a>
             <ul class="nav__list">
-                <li><a href="" class="nav__item">start</a></li>
-                <li><a href="" class="nav__item">oferta</a></li>
-                <li><a href="" class="nav__item">realizacje</a></li>
-                <li><a href="" class="nav__item">cennik</a></li>
-                <li><a href="" class="nav__item">kontakt</a></li>
+                <li><a href="#start" class="nav__item">start</a></li>
+                <li><a href="#oferta" class="nav__item">oferta</a></li>
+                <li><a href="#realizacje" class="nav__item">realizacje</a></li>
+                <li><a href="#cennik" class="nav__item">cennik</a></li>
+                <li><a href="#kontakt" class="nav__item">kontakt</a></li>
             </ul>
 
             <button class="burger" aria-label="Menu">
@@ -33,19 +33,19 @@
             </button>
         </div>
     </nav>
-    <header class="header">
+    <header id="start" class="header">
         <div class="container">
             <h1 class="header__heading">Strona testowa</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus ex vel commodi quisquam, sit,
                 voluptatum voluptas error dolores laboriosam reprehenderit corporis voluptatem obcaecati quaerat
                 necessitatibus, eligendi autem magni.</p>
-                <a href="#" class="btn">Dowiedz się więcej</a>
-                <a href="#" class="btn">Zamów wycenę</a>
-                <div class="overlay"></div>
+            <a href="#" class="btn">Dowiedz się więcej</a>
+            <a href="#" class="btn">Zamów wycenę</a>
+            <div class="overlay"></div>
         </div>
     </header>
     <main>
-        <section class="offer">
+        <section id="oferta" class="offer">
             <div class="container">
                 <h2 class="section__heading">Oferta</h2>
                 <ul>
@@ -58,53 +58,73 @@
                 </ul>
             </div>
         </section>
-        <section class="section realizations">
+        <section id="realizacje" class="section realizations">
             <div class="container">
                 <h2 class="section__heading">Realizacje</h2>
-                <div class="realizations__item">
-                    <h3>Tworzenie responsywnej strony internetowej dla małej firmy kosmetycznej</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
-                </div>
-                <div class="realizations__item">
-                    <h3>Optymalizacja wydajności strony internetowej sklepu online zwiększająca prędkość ładowania</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
-                </div>
-                <div class="realizations__item">
-                    <h3>Projektowanie nowego interfejsu użytkownika (UI) dla aplikacji społecznościowej</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
-                </div>
-                <div class="realizations__item">
-                    <h3>Programowanie aplikacji internetowej do zarządzania projektami dla firmy technologicznej</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
-                </div>
-                <div class="realizations__item">
-                    <h3>Rozwijanie i konserwacja istniejącej strony internetowej bloga podróżniczego</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
-                </div>
+                <div class="realizations__items">
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Tworzenie responsywnej strony internetowej dla małej firmy kosmetycznej</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Optymalizacja wydajności strony internetowej sklepu online zwiększająca prędkość ładowania
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Projektowanie nowego interfejsu użytkownika (UI) dla aplikacji społecznościowej</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Programowanie aplikacji internetowej do zarządzania projektami dla firmy technologicznej
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Rozwijanie i konserwacja istniejącej strony internetowej bloga podróżniczego</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
 
-                <div class="realizations__item">
-                    <h3>Integracja zewnętrznego API płatności w aplikacji e-commerce</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
-                </div>
-                <div class="realizations__item">
-                    <h3>Tworzenie strony portfolio dla artysty wizualnego</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
-                </div>
-                <div class="realizations__item">
-                    <h3>Projektowanie interaktywnego narzędzia do analizy danych dla badacza naukowego</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta vitae, libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
-                    <img src="./img/matrix-1735640_640.jpg" alt="test">
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Integracja zewnętrznego API płatności w aplikacji e-commerce</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Tworzenie strony portfolio dla artysty wizualnego</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
+                    <div class="realizations__item">
+                        <img src="./img/matrix-1735640_640.jpg" alt="test">
+                        <h3>Projektowanie interaktywnego narzędzia do analizy danych dla badacza naukowego</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat labore odit rerum soluta
+                            vitae,
+                            libero non reiciendis blanditiis, odio, quis quaerat. At, sint quos.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="section price">
+        <section id="cennik" class="section price">
             <div class="container">
                 <h2 class="section__heading">Cennik</h2>
                 <ul>
@@ -125,13 +145,14 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <section class="section contact">
+            <section id="kontakt" class="section contact">
                 <h2 class="section__heading">Kontakt</h2>
                 <p>Jeśli masz pytania lub chciałbyś się skontaktować, możesz to zrobić za pośrednictwem poniższych
                     danych
                     kontaktowych:</p>
-                <p>Adres email:<br/><a href="mailto:kontakt@przykladowa-strona.pl">kontakt@przykladowa-strona.pl</a></p>
-                <p>Numer telefonu:<br/>+48 123 456 789</p>
+                <p>Adres email:<br /><a href="mailto:kontakt@przykladowa-strona.pl">kontakt@przykladowa-strona.pl</a>
+                </p>
+                <p>Numer telefonu:<br />+48 123 456 789</p>
             </section>
             <p class="footer__copy">webLab &copy; 2023</p>
         </div>

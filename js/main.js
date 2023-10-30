@@ -26,3 +26,19 @@ function handleScroll() {
 }
 
 window.addEventListener('scroll', handleScroll)
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // const nav = document.querySelector('.nav');
+    const headerHeading = document.querySelector('.header__heading');
+
+    const setHeaderMargin = () => {
+        const navHeight = sizeNav.clientHeight;
+        headerHeading.style.marginTop = `${navHeight}px`;
+    };
+
+    setHeaderMargin(); // Wywołanie funkcji na początku
+
+    // EventListener dla zmiany wielkości okna, jeśli chcesz, aby odświeżało się przy zmianie wielkości nawigacji
+    window.addEventListener('resize', setHeaderMargin);
+});

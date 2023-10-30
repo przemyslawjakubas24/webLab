@@ -1,9 +1,18 @@
 // Contact styles
 
 .contact {
-    padding: 6em 0 2em;
-    line-height: 1.5;
-    p {
-        margin-bottom: 1em;
-    }
+	padding: 6em 0 2em;
+	line-height: 1.5;
+	p {
+		margin-bottom: 1em;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.contact {
+		p {
+			width: 50%;
+		}
+	}
 }

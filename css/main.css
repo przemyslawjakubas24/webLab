@@ -22,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Gluten", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -37,9 +37,13 @@ h3 {
   font-size: 1.8rem;
 }
 
+h4, h5, h6 {
+  font-size: 1.6rem;
+}
+
 a {
   text-decoration: none;
-  color: #ba824a;
+  color: #349bba;
   cursor: pointer;
 }
 
@@ -71,6 +75,22 @@ button {
   margin-bottom: 1em;
 }
 
+@media (max-width: 320px) {
+  .container {
+    padding: 0 1em;
+  }
+  .header,
+  .offer,
+  .realizations,
+  .price {
+    padding: 2em 0;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    padding: 12em 0;
+  }
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -83,9 +103,12 @@ button {
 }
 
 .logo {
-  display: block;
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
   z-index: 30;
   width: 50px;
+  color: #eee;
   transition: 0.2s ease-in-out;
 }
 .logo img {
@@ -106,7 +129,9 @@ button {
   align-items: center;
 }
 .nav .nav__container {
-  transition: padding 0.2s ease-in-out;
+  transition-property: padding;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .nav__list {
   position: fixed;
@@ -119,7 +144,9 @@ button {
   width: 100%;
   height: 100vh;
   transform: translateX(100%);
-  transition: transform 0.2s ease-in-out;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
   background-color: #349bba;
 }
 .nav__list li {
@@ -128,6 +155,7 @@ button {
 .nav__list li:last-child {
   margin: 0;
   background-color: #222;
+  border-radius: 0.25em;
 }
 .nav__list--active {
   transform: translateX(0);
@@ -139,14 +167,18 @@ button {
   color: #eee;
   font-size: 2rem;
   text-transform: uppercase;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  transition-property: font-size, width, height;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .nav__item::before, .nav__item::after {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  transition-property: font-size, width, height;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 .nav__item::before {
   top: -2px;
@@ -197,7 +229,6 @@ button {
   }
   .nav__item {
     font-size: 1.6rem;
-    transition: font-size 0.2s ease-in-out;
   }
 }
 .burger {
@@ -268,7 +299,6 @@ button {
   position: relative;
   z-index: 149;
   display: block;
-  margin-bottom: 1em;
   padding: 1em;
   text-align: center;
   background-color: #349bba;
@@ -294,12 +324,29 @@ button {
   margin-bottom: 2em;
   line-height: 1.5;
 }
+.header .container .btn {
+  margin-bottom: 1.5em;
+}
 .header .header__heading {
-  margin: 5em 0 1em;
+  margin-bottom: 1em;
   position: relative;
   z-index: 151;
 }
 
+@media (min-width: 768px) {
+  .header .btn {
+    display: inline-block;
+    margin-right: 1.5em;
+  }
+  .header p {
+    max-width: 75%;
+  }
+}
+@media (min-width: 992px) {
+  .header p {
+    max-width: 50%;
+  }
+}
 .offer {
   background-color: #eee;
 }
@@ -308,6 +355,9 @@ button {
   margin-bottom: 2em;
   line-height: 1.5;
 }
+.offer ul li:last-child {
+  margin-bottom: 0;
+}
 
 .realizations {
   background-color: #349bba;
@@ -315,19 +365,45 @@ button {
 .realizations__item {
   background-color: #eee;
   margin-bottom: 2em;
-  padding: 1em;
+  padding: 0;
 }
-.realizations__item h3 {
-  margin-bottom: 1em;
-  line-height: 1.2;
-}
-.realizations__item p {
-  margin-bottom: 1em;
+.realizations__item:last-child {
+  margin-bottom: 0;
 }
 .realizations__item img {
   width: 100%;
+  margin-bottom: 1em;
+}
+.realizations__item h3 {
+  padding: 0 1em 1em;
+  line-height: 1.2;
+}
+.realizations__item p {
+  padding: 0 1em 1em;
 }
 
+@media (min-width: 768px) {
+  .realizations__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .realizations__item {
+    width: 48%;
+  }
+  .realizations__item:last-child {
+    margin-bottom: 2em;
+  }
+  .realizations__item img {
+    margin-bottom: 2em;
+  }
+  .realizations__item h3 {
+    padding: 0 2em 1em;
+  }
+  .realizations__item p {
+    padding: 0 2em 2em;
+  }
+}
 .price {
   background-color: #eee;
 }
@@ -335,6 +411,9 @@ button {
   list-style: inside;
   margin-bottom: 2em;
   line-height: 1.5;
+}
+.price li:last-child {
+  margin-bottom: 0;
 }
 
 .contact {
@@ -345,6 +424,11 @@ button {
   margin-bottom: 1em;
 }
 
+@media (min-width: 768px) {
+  .contact p {
+    width: 50%;
+  }
+}
 .footer {
   background-color: #222;
   color: #eee;
