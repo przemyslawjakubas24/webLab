@@ -1,6 +1,8 @@
 // Realizations styles
 
 .realizations {
+	position: relative;
+	
 	background-color: $primary-color;
 	&__item {
 		background-color: $light-color;
@@ -21,6 +23,13 @@
 			padding: 0 1em 1em;
 		}
 	}
+}
+
+.realizations::after {
+	@include divider-section;
+	transform: skewX(-45deg);
+    right: -60%;
+    bottom: -10px;
 }
 
 // Medium devices (tablets, 768px and up)

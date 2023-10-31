@@ -26,6 +26,12 @@
 	}
 }
 
+.header::after {
+	@include divider-section;
+	left: -60%;
+ 	transform: skewX(45deg);
+}
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	.header {
