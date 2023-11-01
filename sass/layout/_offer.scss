@@ -19,6 +19,6 @@
 .offer::after {
 	@include divider-section;
 	transform: skewX(-45deg);
-	left: -60%;
-	bottom: -40px;
+	bottom: -30px;
+	left: -40px;
 }

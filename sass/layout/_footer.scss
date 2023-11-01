@@ -12,6 +12,6 @@
 .footer::after {
 	@include divider-section;
 	transform: skewX(45deg);
-	right: -60%;
+    right: -40px;
 	top: -10px;
 }

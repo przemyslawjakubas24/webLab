@@ -32,7 +32,6 @@
 		li {
 			margin: 0 1em 2em 0;
 			&:last-child {
-				margin: 0;
 				background-color: $dark-color;
 				border-radius: $default-rounding;
 			}
@@ -106,6 +105,9 @@
 			background-color: transparent;
 			li {
 				margin-bottom: 0;
+				&:last-child {
+					margin-right: 0;
+				}
 			}
 		}
 		&__item {

@@ -9,12 +9,12 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
-  overflow-x: hidden;
 }
 
 h1,
@@ -154,7 +154,6 @@ button {
   margin: 0 1em 2em 0;
 }
 .nav__list li:last-child {
-  margin: 0;
   background-color: #222;
   border-radius: 0.25em;
 }
@@ -227,6 +226,9 @@ button {
   }
   .nav__list li {
     margin-bottom: 0;
+  }
+  .nav__list li:last-child {
+    margin-right: 0;
   }
   .nav__item {
     font-size: 1.6rem;
@@ -336,14 +338,14 @@ button {
 
 .header::after {
   position: absolute;
-  bottom: -1px;
-  width: 100%;
+  bottom: -10px;
+  width: 50%;
   height: 40px;
   content: "";
   background-color: #eee;
   z-index: 200;
-  left: -60%;
   transform: skewX(45deg);
+  left: -40px;
 }
 
 @media (min-width: 768px) {
@@ -375,19 +377,20 @@ button {
 
 .offer::after {
   position: absolute;
-  bottom: -1px;
-  width: 100%;
+  bottom: -10px;
+  width: 50%;
   height: 40px;
   content: "";
   background-color: #eee;
   z-index: 200;
   transform: skewX(-45deg);
-  left: -60%;
-  bottom: -40px;
+  bottom: -30px;
+  left: -40px;
 }
 
 .realizations {
   position: relative;
+  overflow: hidden;
   background-color: #349bba;
 }
 .realizations__item {
@@ -412,14 +415,14 @@ button {
 
 .realizations::after {
   position: absolute;
-  bottom: -1px;
-  width: 100%;
+  bottom: -10px;
+  width: 50%;
   height: 40px;
   content: "";
   background-color: #eee;
   z-index: 200;
   transform: skewX(-45deg);
-  right: -60%;
+  right: -40px;
   bottom: -10px;
 }
 
@@ -481,13 +484,13 @@ button {
 
 .footer::after {
   position: absolute;
-  bottom: -1px;
-  width: 100%;
+  bottom: -10px;
+  width: 50%;
   height: 40px;
   content: "";
   background-color: #eee;
   z-index: 200;
   transform: skewX(45deg);
-  right: -60%;
+  right: -40px;
   top: -10px;
 }/*# sourceMappingURL=main.css.map */
