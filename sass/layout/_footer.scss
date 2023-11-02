@@ -1,17 +1,9 @@
 // Fotter styles
 
 .footer {
-	position: relative;
 	background-color: $dark-color;
 	color: $light-color;
 	&__copy {
 		padding: 2rem 0;
 	}
-}
-
-.footer::after {
-	@include divider-section;
-	transform: skewX(45deg);
-    right: -40px;
-	top: -10px;
 }

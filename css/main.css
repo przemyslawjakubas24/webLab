@@ -336,18 +336,6 @@ button {
   z-index: 151;
 }
 
-.header::after {
-  position: absolute;
-  bottom: -10px;
-  width: 50%;
-  height: 40px;
-  content: "";
-  background-color: #eee;
-  z-index: 200;
-  transform: skewX(45deg);
-  left: -40px;
-}
-
 @media (min-width: 768px) {
   .header .btn {
     display: inline-block;
@@ -363,7 +351,6 @@ button {
   }
 }
 .offer {
-  position: relative;
   background-color: #eee;
 }
 .offer ul li {
@@ -375,22 +362,7 @@ button {
   margin-bottom: 0;
 }
 
-.offer::after {
-  position: absolute;
-  bottom: -10px;
-  width: 50%;
-  height: 40px;
-  content: "";
-  background-color: #eee;
-  z-index: 200;
-  transform: skewX(-45deg);
-  bottom: -30px;
-  left: -40px;
-}
-
 .realizations {
-  position: relative;
-  overflow: hidden;
   background-color: #349bba;
 }
 .realizations__item {
@@ -411,19 +383,6 @@ button {
 }
 .realizations__item p {
   padding: 0 1em 1em;
-}
-
-.realizations::after {
-  position: absolute;
-  bottom: -10px;
-  width: 50%;
-  height: 40px;
-  content: "";
-  background-color: #eee;
-  z-index: 200;
-  transform: skewX(-45deg);
-  right: -40px;
-  bottom: -10px;
 }
 
 @media (min-width: 768px) {
@@ -474,23 +433,9 @@ button {
   }
 }
 .footer {
-  position: relative;
   background-color: #222;
   color: #eee;
 }
 .footer__copy {
   padding: 2rem 0;
-}
-
-.footer::after {
-  position: absolute;
-  bottom: -10px;
-  width: 50%;
-  height: 40px;
-  content: "";
-  background-color: #eee;
-  z-index: 200;
-  transform: skewX(45deg);
-  right: -40px;
-  top: -10px;
 }/*# sourceMappingURL=main.css.map */

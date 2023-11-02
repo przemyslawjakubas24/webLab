@@ -26,12 +26,6 @@
 	}
 }
 
-.header::after {
-	@include divider-section;
- 	transform: skewX(45deg);
-	left: -40px;
-}
-
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 	.header {

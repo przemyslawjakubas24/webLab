@@ -1,7 +1,6 @@
 // Offer styles
 
 .offer {
-	position: relative;
 	background-color: $light-color;
 	ul {
 		// line-height: 3em;
@@ -14,11 +13,4 @@
 			}
 		}
 	}
-}
-
-.offer::after {
-	@include divider-section;
-	transform: skewX(-45deg);
-	bottom: -30px;
-	left: -40px;
 }
