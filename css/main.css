@@ -44,7 +44,7 @@ h4, h5, h6 {
 
 a {
   text-decoration: none;
-  color: #349bba;
+  color: rgb(23, 159, 237);
   cursor: pointer;
 }
 
@@ -120,7 +120,7 @@ button {
 .nav {
   position: fixed;
   width: 100%;
-  background-color: #349bba;
+  background-image: linear-gradient(45deg, rgb(23, 159, 237), rgb(18, 134, 201));
   z-index: 205;
 }
 .nav .container {
@@ -148,7 +148,7 @@ button {
   transition-property: transform;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
-  background-color: #349bba;
+  background-color: rgb(23, 159, 237);
 }
 .nav__list li {
   margin: 0 1em 2em 0;
@@ -207,7 +207,7 @@ button {
 
 @media (min-width: 992px) {
   .nav {
-    background-color: #349bba;
+    background-color: rgb(23, 159, 237);
   }
   .nav .container {
     padding: 2em;
@@ -304,7 +304,7 @@ button {
   display: block;
   padding: 1em;
   text-align: center;
-  background-color: #349bba;
+  background-color: rgb(23, 159, 237);
   color: #eee;
   border-radius: 0.25em;
 }
@@ -317,7 +317,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #ba824a url(../img/page/particles-7104407_640.jpg) center;
+  background: rgb(18, 134, 201) url(../img/page/particles-7104407_640.jpg) center;
   background-size: cover;
   color: #eee;
 }
@@ -363,7 +363,7 @@ button {
 }
 
 .realizations {
-  background-color: #349bba;
+  background-image: linear-gradient(45deg, rgb(23, 159, 237), rgb(18, 134, 201));
 }
 .realizations__item {
   background-color: #eee;

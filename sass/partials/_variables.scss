@@ -2,9 +2,11 @@
 
 $light-color: #eee;
 $dark-color: #222;
-$primary-color: #349bba;
-$secondary-color: #ba824a;
+$primary-color: rgb(23, 159, 237);
+$secondary-color: rgb(18,134,201);
 $overlay-color: rgba(0, 0, 0, .5);
+
+$primary-gradient: linear-gradient(45deg, $primary-color, $secondary-color);
 
 $default-rounding: .25em;
 
