@@ -58,40 +58,6 @@ button {
   cursor: pointer;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0 2em;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.header,
-.offer,
-.realizations,
-.price {
-  padding: 6em 0;
-}
-
-.section__heading {
-  margin-bottom: 1em;
-}
-
-@media (max-width: 320px) {
-  .container {
-    padding: 0 1em;
-  }
-  .header,
-  .offer,
-  .realizations,
-  .price {
-    padding: 2em 0;
-  }
-}
-@media (min-width: 992px) {
-  .header {
-    padding: 12em 0;
-  }
-}
 .overlay {
   position: absolute;
   top: 0;
@@ -312,6 +278,40 @@ button {
   margin-bottom: 0;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 2em;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.header,
+.offer,
+.realizations,
+.price {
+  padding: 6em 0;
+}
+
+.section__heading {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 1em;
+  }
+  .header,
+  .offer,
+  .realizations,
+  .price {
+    padding: 2em 0;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    padding: 12em 0;
+  }
+}
 .header {
   position: relative;
   display: flex;
