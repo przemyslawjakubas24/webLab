@@ -17,23 +17,13 @@ burgerBtn.addEventListener('click', () => {
 
 function handleScroll() {
 	if (window.scrollY >= 200) {
-		sizeNav.style.padding = '1em'
+		sizeNav.style.padding = '1em 2em'
 		sizeNavLogo.style.width = '40px'
 	} else {
-		sizeNav.style.padding = '1.5em'
+		sizeNav.style.padding = '1.5em 2em'
 		sizeNavLogo.style.width = '50px'
 	}
 }
 
 window.addEventListener('scroll', handleScroll)
 
-document.addEventListener('DOMContentLoaded', () => {
-    const headerHeading = document.querySelector('.header__heading');
-
-    const setHeaderMargin = () => {
-        const navHeight = sizeNav.clientHeight;
-        headerHeading.style.marginTop = `${navHeight}px`;
-    };
-    setHeaderMargin();
-    window.addEventListener('resize', setHeaderMargin);
-});
